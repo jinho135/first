@@ -196,6 +196,7 @@ public class KcalView extends JFrame {
 	private JSpinner spnkcalDate;
 	private JButton btnOut;
 	private JButton btnLogout;
+	private JLabel lblBetaVersion;
 
 	/**
 	 * Launch the application.
@@ -268,6 +269,7 @@ public class KcalView extends JFrame {
 			p1.add(getSpnbirth());
 			p1.add(getLabel_20());
 			p1.add(getButton_2());
+			p1.add(getLblBetaVersion());
 		}
 		return p1;
 	}
@@ -2118,5 +2120,12 @@ public class KcalView extends JFrame {
 			btnLogout.setBounds(265, 489, 97, 23);
 		}
 		return btnLogout;
+	}
+	private JLabel getLblBetaVersion() {
+		if (lblBetaVersion == null) {
+			lblBetaVersion = new JLabel("Beta Version");
+			lblBetaVersion.setBounds(12, 497, 97, 15);
+		}
+		return lblBetaVersion;
 	}
 }
